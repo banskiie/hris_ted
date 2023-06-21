@@ -1,10 +1,16 @@
 import React from "react";
-import AttendanceModal from "../components/AttendanceModal";
+import AttendanceModal from "../components/modal/AttendanceModal";
 
 const Attendance = () => {
     return (
         <div>
             <div className="w-full flex flex-row justify-between px-8 py-4">
+                <div className="flex flex-row items-center gap-3">
+                    <h1 className="text-slate-900 uppercase text-3xl font-extrabold">
+                        Attendance
+                    </h1>
+                    <AttendanceModal />
+                </div>
                 <select
                     className="select select-bordered  text-slate-600 font-roboto-condensed"
                     defaultValue="time_in"
@@ -12,7 +18,6 @@ const Attendance = () => {
                     <option value="time_in">Time In</option>
                     <option value="time_out">Time Out</option>
                 </select>
-                <AttendanceModal />
             </div>
             <div className="overflow-x-auto text-slate-600 px-8 py-2">
                 <table className="table">

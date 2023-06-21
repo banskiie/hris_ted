@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import IconTime from "../assets/icons/IconTime";
+import IconTime from "../../assets/icons/IconTime";
 import Webcam from "react-webcam";
 
 const AttendanceModal = () => {

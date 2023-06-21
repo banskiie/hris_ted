@@ -1,6 +1,5 @@
 import React from "react";
 import c1blogo from "../assets/img/c1b.png";
-import { NavLink } from "react-router-dom";
 import { useStateContext } from "../contexts/ContextProvider";
 
 const Login = () => {
@@ -42,14 +41,6 @@ const Login = () => {
                             placeholder="•••••••••••••"
                             className="input border-secondary text-slate-800"
                         />
-                    </div>
-                    <div className="w-full mt-2">
-                        <NavLink
-                            to="/register"
-                            className=" text-slate-400 hover:text-green-900"
-                        >
-                            Don't have an account?
-                        </NavLink>
                     </div>
 
                     <button
